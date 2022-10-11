@@ -15,5 +15,11 @@ public class EstudoArrays {
 
         String mensagem = (soma < 7 )? "você esta reprovado" : "você esta aprovado"; // condição ternaria
         System.out.println(mensagem);
+
+        // Wrapper classes, valores default são null
+        Integer numero2 = 1;
+        Double numero3 = 1.0;
+        Long pop2 = 1L;
+        Boolean pop3 = false;
     }
 }
