@@ -1,4 +1,4 @@
-/*
+package exercicios;/*
 1) Escreva um programa que exiba as seguintes opções e realize os que se pede em cada uma delas: (switch-case)
 
 1 – Adição

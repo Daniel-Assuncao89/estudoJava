@@ -1,4 +1,4 @@
-/*
+package exercicios;/*
 3) Leia 2 vetores de inteiros V1 e V2 de N componentes cada (no máximo 50). Determine e imprima quantas vezes
 que V1 e
  */

@@ -1,3 +1,5 @@
+package exercicios;
+
 /*
 4) Criar um programa que lê a idade de uma pessoa e diz se ela é maior de idade ou não.
  */

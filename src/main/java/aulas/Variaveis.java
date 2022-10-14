@@ -1,8 +1,10 @@
+package aulas;
+
 public class Variaveis {
     public static void main(String[] args){
         System.out.println("Hello, world");
 
-        // Variaveis no JAVA
+        // aulas.Variaveis no JAVA
         // Fortemente tipado e estaticamente tipado
         int idade = 20; //inteiro
         double salario = 4500.99;
