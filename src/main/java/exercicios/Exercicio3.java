@@ -26,6 +26,7 @@ public class Exercicio3 {
         }
 
 
+
         for (int i = 0; i < tamanhoArray; i++){
             System.out.println("Valor para comparação: "+ v1[i]);
             for(int y = 0; y < tamanhoArray; y++) {
@@ -37,6 +38,7 @@ public class Exercicio3 {
                     System.out.print("\n");
                 }
             }
+
         }
         System.out.println("\nQuantidade de vezes que tivemos numeros repetidos: "+ contador);
     }
