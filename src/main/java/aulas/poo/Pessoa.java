@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Pessoa {
     // Propriedades/atributos de uma Pessoa
-    String nome;
-    String sobrenome;
-    int idade;
-    double altura;
-    double peso;
+    private String nome;
+    private String sobrenome;
+    private int idade;
+    private double altura;
+    private double peso;
 
     ArrayList<Pessoa> conhecidos = new ArrayList<>();
 
@@ -70,7 +70,7 @@ public class Pessoa {
         }
     }
 
-    void addPessoaNova(Pessoa pessoa) {
+    private void addPessoaNova(Pessoa pessoa) {
         // adiciona a pessoa no ArrayList
         this.conhecidos.add(pessoa);
         System.out.println(this.nome + " conheceu " + pessoa.nome + "!!!");
@@ -79,5 +79,9 @@ public class Pessoa {
     boolean conhecePessoa(Pessoa pessoa){
         // contains vai varrer o ArrayList em busca da pessoa
         return this.conhecidos.contains(pessoa);
+    }
+
+    int getIdade(){
+        return this.idade;
     }
 }
