@@ -18,7 +18,9 @@ public class BichinhoTeste {
         teste.setAcordar();
 
         teste.comer(diversos);
+
         diversos.setNomeAlimento("Carangueijo");
+        diversos.setPeso(0.2);
         teste.comer(diversos);
         System.out.println(teste.getPesoBichinho());
     }

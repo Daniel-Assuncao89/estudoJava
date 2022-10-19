@@ -22,7 +22,7 @@ public class Bichinho {
             System.out.println("Não come comida repetida ou esta dormindo!");
         } else {
             this.bucho.add(comida);
-            this.pesoBichinho += 0.5;
+            this.pesoBichinho +=  0.5;
         }
     }
 
