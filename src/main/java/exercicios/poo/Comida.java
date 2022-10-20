@@ -11,18 +11,13 @@ public class Comida {
         this.peso = peso;
     }
 
-//    @Override
-//    public String toString() {
-//        return "bucho[" + this.food + "] ";
-//    }
-
     public String getFood(){
         return this.food;
     }
     public double getPeso(){
         return this.peso;
     }
-    void setNomeAlimento(String nome){
+    void setNomeAlimento(String nome, double peso){
         this.food = nome;
     }
     void setPeso(double peso){

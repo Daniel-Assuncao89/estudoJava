@@ -10,6 +10,7 @@ public class Bichinho {
 
     ArrayList<Comida> bucho = new ArrayList<>();
 
+
     Bichinho(String nome, int idade, double pesoBichinho){
         this.estaDormindo = false;
         this.nomeBichinho = nome;
@@ -17,7 +18,7 @@ public class Bichinho {
         this.pesoBichinho = pesoBichinho;
     }
 
-    public void comer(Comida comida){
+    public void comer(Comida comida){ //precisa armazenar a string inserida.
         if(bucho.contains(comida) || estaDormindo ){
             System.out.println("Não come comida repetida ou esta dormindo!");
         } else {
@@ -45,8 +46,12 @@ public class Bichinho {
     }
 
     public void getListaAlimentos(){
-        System.out.println(bucho.toString());
+        System.out.printf("bucho");
+        for (Comida b: bucho) {
+            System.out.printf("[" + b +"] ");
+        }
     }
+
 
 }
 
