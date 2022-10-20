@@ -44,8 +44,8 @@ public class Bichinho {
         return this.pesoBichinho;
     }
 
-    public String getListaAlimentos(){
-        return bucho.toString();
+    public void getListaAlimentos(){
+        System.out.println(bucho.toString());
     }
 
 }

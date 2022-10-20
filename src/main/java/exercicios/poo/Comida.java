@@ -1,26 +1,29 @@
 package exercicios.poo;
 
-import exercicios.poo.Bichinho;
-
-import java.util.ArrayList;
-
 public class Comida {
-    private String nomeComida;
+    private String food;
     private double peso;
 
-    public Comida(String nomeComida, double peso){
-        this.nomeComida = nomeComida;
+
+
+    public Comida(String food, double peso){
+        this.food = food;
         this.peso = peso;
     }
 
-    public String getNomeComida(){
-        return this.nomeComida;
+//    @Override
+//    public String toString() {
+//        return "bucho[" + this.food + "] ";
+//    }
+
+    public String getFood(){
+        return this.food;
     }
     public double getPeso(){
         return this.peso;
     }
     void setNomeAlimento(String nome){
-        this.nomeComida = nome;
+        this.food = nome;
     }
     void setPeso(double peso){
         this.peso = peso;
