@@ -49,6 +49,7 @@ class Galinha implements Animal {
         Galinha galinha = new Galinha();
         Gato gato = new Gato();
 
+
         galinha.fazerSom();
         galinha.dormir();
         galinha.comer("Milho");
