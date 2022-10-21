@@ -13,7 +13,7 @@ class EmailNotificador implements Notificador{
 
     @Override
     public void notificar(String msg) {
-        System.out.println("Notificação email: " + msg);
+        System.out.println("Notificação email: " + this.email +"; " + msg);
     }
 }
 
@@ -26,7 +26,7 @@ class TelefoneNotificador implements Notificador{
 
     @Override
     public void notificar(String msg) {
-        System.out.println("Notificação Telefone: " + msg);
+        System.out.println("Notificação Telefone: "+ this.numero +"; " + msg);
     }
 }
 
@@ -40,7 +40,7 @@ class InstagramNotificacao implements Notificador{
 
     @Override
     public void notificar(String msg) {
-        System.out.println("Notificacao Instagram " + msg);
+        System.out.println("Notificacao Instagram " + this.nomeUsuario +"; " + msg);
     }
 
 }
@@ -53,7 +53,7 @@ class Sistema{
     }
 
     public void alertaSistema(){
-        notificador.notificar("Alerta");
+        notificador.notificar("Alerta de Sistema");
     }
 
     public void sobreCargaSistema(){

@@ -1,10 +1,12 @@
 package exercicios.poo;
 
 public class Livro {
-    String nome, autor;
-    double preco;
+    private String nome;
 
-    Livro (String nome, String autor, double preco){
+    private Autor autor;
+    private double preco;
+
+    Livro (String nome, Autor autor, double preco){
         this.nome = nome;
         this.autor = autor;
         this.preco = preco;
@@ -12,5 +14,17 @@ public class Livro {
 
     public void criarLivros(){
         System.out.println("Livro: " + this.nome + "\nAutor: " + this.autor + "\nPreço: " + this.preco);
+    }
+
+    public static void main(String[] args) {
+        Autor jk = new Autor("jk", "jk@hot");
+        Livro camaraSecreta = new Livro("Camara Secreta", jk, 29.90);
+
+        System.out.println(camaraSecreta.autor.getNome());
+
+        Livro prisioneiro = jk.escreverLivro("HP: azkaban", 50);
+
+
+
     }
 }

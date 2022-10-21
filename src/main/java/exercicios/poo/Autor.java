@@ -23,4 +23,9 @@ public class Autor {
     public String getEmail(){
         return this.email;
     }
+
+    public Livro escreverLivro(String nome, double preco){
+        Livro novoLivro = new Livro(nome, this, preco);
+        return novoLivro;
+    }
 }
