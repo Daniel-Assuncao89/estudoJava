@@ -48,18 +48,37 @@ class InstagramNotificacao implements Notificador{
 class Sistema{
     Notificador notificador;
 
-
-
-    public void Sistema(Notificador msg){
-        this.notificador = msg;
+    Sistema(Notificador notificador){
+        this.notificador = notificador;
     }
 
     public void alertaSistema(){
-        System.out.println(notificador + "ALERTA!");
+        notificador.notificar("Alerta");
     }
 
     public void sobreCargaSistema(){
-        System.out.println(notificador + "Sobrecarga Sistema");
+
+        notificador.notificar("Sobrecarga Sistema");
+    }
+
+    public static void main(String[] args) {
+        InstagramNotificacao instagram = new InstagramNotificacao("Daniel");
+        TelefoneNotificador telefone = new TelefoneNotificador(9100000);
+        EmailNotificador email = new EmailNotificador("consegui@gmail.com");
+
+        Sistema t1 = new Sistema(instagram);
+        Sistema t2 = new Sistema(telefone);
+        Sistema t3 = new Sistema(email);
+
+        t1.alertaSistema();
+        t1.sobreCargaSistema();
+
+        t2.alertaSistema();
+        t2.sobreCargaSistema();
+
+        t3.alertaSistema();
+        t3.sobreCargaSistema();
+
     }
 
 }
