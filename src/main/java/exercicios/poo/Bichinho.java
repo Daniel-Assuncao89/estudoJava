@@ -15,6 +15,7 @@ public class Bichinho {
         this.estaDormindo = false;
         this.nomeBichinho = nome;
         this.idade = idade;
+        //this.bucho = new ArrayList<>();
         this.pesoBichinho = pesoBichinho;
     }
 
@@ -23,7 +24,7 @@ public class Bichinho {
             System.out.println("Não come comida repetida ou esta dormindo!");
         } else {
             this.bucho.add(comida);
-            this.pesoBichinho +=  0.5;
+            this.pesoBichinho +=  comida.getPeso();
         }
     }
 

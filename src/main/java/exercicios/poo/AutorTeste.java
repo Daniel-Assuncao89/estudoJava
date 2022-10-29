@@ -2,12 +2,12 @@
 //
 //public class AutorTeste {
 //    public static void main(String[] args) {
-//        Autor teste = new Autor("Gloria", "gloria@hotmail.com");
+//        Autor testeBD = new Autor("Gloria", "gloria@hotmail.com");
 //
-//        teste.setAlteraNome("Frederico");
-//        System.out.println(teste.getNome());
-//        teste.setAlteraEmail("aleluia@gmail.com");
-//        System.out.println(teste.getEmail());
+//        testeBD.setAlteraNome("Frederico");
+//        System.out.println(testeBD.getNome());
+//        testeBD.setAlteraEmail("aleluia@gmail.com");
+//        System.out.println(testeBD.getEmail());
 //    }
 //
 //
